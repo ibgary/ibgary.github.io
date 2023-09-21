@@ -1,207 +1,282 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ib的博客 - 吹着口哨向前走吧 天上星星璀璨依旧</title><meta name="author" content="ib"><meta name="copyright" content="ib"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="ib的博客">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="ib的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/IMG_5016.JPG">
+<meta property="article:author" content="ib">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/IMG_5016.JPG"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ib的博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-09-21 19:27:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/06/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-02-06T07:52:26.443Z" itemprop="datePublished">2023-02-06</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/06/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/IMG_5016.JPG" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ib的博客"><span class="site-name">ib的博客</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ib的博客</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/vuecli/" title="关于vue-cli脚手架">关于vue-cli脚手架</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:54.018Z" title="发表于 2023-09-21 19:12:54">2023-09-21</time></span></div><div class="content">笔记脚手架文件结构├── node_modules 
+├── public
+│   ├── favicon.ico: 页签图标
+│   └── index.html: 主页面
+├── src
+│   ├── assets: 存放静态资源
+│   │   └── logo.png
+│   │── component: 存放组件
+│   │   └── HelloWorld.vue
+│   │── App.vue: 汇总所有组件
+│   │── main.js: 入口文件
+├── .gitignore: git版本管制忽略的配置
+├── babel.config.js: babel的配置文件
+├── package.json: 应用包配置文件 
+├── README.md: 应用描述文件
+├── package-lock.json：包版本控制文件
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/06/hello-world/" data-id="cldsinxr10000jxu19lex1569" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+关于不同版本的Vue
+vue.js与vue.runtime.xxx.js的区别：
+vue.js是完整版的Vue，包含：核心功能 + 模板解析器。
+vue.runtime.xxx.js是运行版的Vue，只包含：核心功能；没有模板解析器。
 
 
+因为 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/data&amp;props/" title="data &amp; props通信">data &amp; props通信</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:48.173Z" title="发表于 2023-09-21 19:12:48">2023-09-21</time></span></div><div class="content">相比于data 组件之间props更适合通信，这么说合理吗 
+这种说法是合理的，因为 props 是用于从一个组件向另一个组件传递数据的通信机制，而 data 是用于在组件内部存储和管理组件的状态数据的机制。在组件之间进行通信时，使用 props 更加合适。
+当一个组件需要向其子组件传递数据时，可以通过 props 将数据传递给子组件。这种方式可以将数据传递给任意数量的子组件，并且子组件可以通过 props 接收到数据并进行处理。这种方式也可以使得组件的数据流更加清晰可见，从而方便组件的维护和调试。
+相比之下，使用 data 在组件之间进行通信可能会导致组件之间的耦合度增加，因为组件的状态数据和逻辑被封装在组件内部，无法被其他组件访问。此外，在多个组件中使用相同的数据可能会导致数据冗余和不一致性，从而增加代码的复杂性和维护难度。
+总之，使用 props 更加适合在组件之间进行通信，而 data 更适合在组件内部存储和管理组件的状态数据。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/render%E5%87%BD%E6%95%B0/" title="render函数学习">render函数学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:37.941Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></span></div><div class="content">在 Vue 中，render 函数是用来创建虚拟 DOM 的，它将数据和模板转化为渲染函数。
+Vue 的模板语法实际上是编译为 render 函数的，因此在编写 Vue 应用时，可以使用模板语法或 render 函数来创建 UI。
+render 函数接收一个函数作为参数，这个函数返回一个虚拟 DOM 对象。虚拟 DOM 是一个 JavaScript 对象，它描述了页面上的节点和它们的属性。
+render 函数的作用是将组件的状态（数据）转化为虚拟 DOM，然后将虚拟 DOM 渲染到页面上。
+以下是一个简单的例子，展示了如何使用 render 函数创建一个组件：
+1234567891011// javascriptCopy codeVue.component(&#x27;my-component&#x27;, &#123;  data: function() &#123;    return &#123;      message: &#x27;Hello, world!&#x27;    &#125;  &#125;,  render: function(createElement)  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/params%E5%8F%82%E6%95%B0%E5%9C%A8path%E4%B8%8B%E5%8D%A0%E4%BD%8D%E7%AC%A6%E7%9A%84%E9%97%AE%E5%8F%B7%E9%97%AE%E9%A2%98/" title="params参数在path下占位符的问号问题">params参数在path下占位符的问号问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:37.938Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></span></div><div class="content">关于params参数在path下占位符的问号问题
+在 Vue Router 中，路由路径中带有问号 ? 的参数是可选的。这意味着在访问路由时，该参数可以存在也可以不存在，并且不会影响路由的匹配。
+例如，在以下路由路径中：
+123456javascriptCopy code&#123;  path: &#x27;/search/:keyword?&#x27;,  name: &#x27;Search&#x27;,  component: Search&#125;
 
-  
+keyword 参数后面的问号表示该参数是可选的。这意味着可以通过以下 URL 来访问这个路由：
 
+/search
+/search/vue
+/search/react
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+在第一个 URL 中，keyword 参数不存在。在第二个和第三个 URL 中，keyword 参数分别为 vue 和 react。
+当您使用带有可选参数的路由路径时，可以在组件中使用 $route.params.keyword 来访问参数的值。如果参数不存在，那么 $route.params.keyword 将会是 undefined。
+如果路由路径中没有问 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/array.reduce()/" title="array.reduce()方法">array.reduce()方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:37.935Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></span></div><div class="content">reduce() 是 JavaScript 数组的一个高阶函数，它可以用来对数组中的所有元素进行迭代并返回一个累加值。它接受一个回调函数作为参数，该函数将为每个元素执行一次，并返回一个累加值。该函数的形式如下：
+1array.reduce(callback[, initialValue])
 
-  
-    
+其中，callback 是一个接受 4 个参数的函数，它将为数组中的每个元素执行一次，并返回一个累加值。参数如下：
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
-    </div>
-  </div>
+accumulator：累加值，该值在每次调用 callback 时被更新。
+currentValue：当前元素的值。
+currentIndex：当前元素在数组中的索引。
+array：原始数组对象。
 
+第二个可选参数 initialValue 是作为第一次调用 callback 时的累加值。如果未提供初始值，则使用数组的第一个元素作为初始值，并跳过第一个元素的索引。如果数组为空且没有提供初始值，则会抛出 TypeError 异常。
+以下是一个示例，演示如何使用 reduce() 计算数组中所有元素的总和：
+12345678javascriptCopy codeconst numbe ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/%E5%9C%A8%20JavaScript%20%E5%92%8C%20Vue/" title="unshift()方法">unshift()方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:37.931Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></span></div><div class="content">在 JavaScript 和 Vue.js 中，unshift() 方法用于在数组的开头插入一个或多个元素，并返回数组的新长度。如果数组是空的，则插入的元素成为数组的第一个元素。
+在 Vue.js 中，如果你使用 v-for 渲染列表，那么使用 unshift() 方法将在列表的开头添加一个新的元素，然后重新渲染整个列表。这个过程可能会比较耗时，因为 Vue.js 需要重新计算整个列表。
+下面是一个使用 unshift() 方法的例子：
+123456789javascriptCopy code// 创建一个空数组const myArray = [];// 在数组的开头插入三个元素myArray.unshift(&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;orange&#x27;);// 输出数组的内容console.log(myArray); // [&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;orange&#x27;]
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/02/06/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+在 Vue.js 中，你可以使用 this.myList.unshift ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/%E6%B6%88%E6%81%AF%E8%AE%A2%E9%98%85%EF%BC%88pubsub%EF%BC%89%E5%92%8C%E5%85%A8%E5%B1%80%E4%BA%8B%E4%BB%B6%E6%80%BB%E7%BA%BF%EF%BC%88GlobalEventBus%EF%BC%89/" title="消息订阅（pubsub）和全局事件总线（GlobalEventBus）">消息订阅（pubsub）和全局事件总线（GlobalEventBus）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:37.925Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></span></div><div class="content">消息订阅与发布（pubsub）和全局事件总线（GlobalEventBus）都是Vue中实现组件间通信的方法，它们的主要区别在于实现方式和使用场景。
+消息订阅与发布是一种发布-订阅模式的实现方式，它基于一个中心事件处理器，通常称为消息代理或事件总线，用于协调组件间的通信。在Vue中，可以使用Vue.prototype.$emit触发事件，并使用Vue.prototype.$on监听事件。这种方式可以在任何组件中使用，无需预先知道其他组件的存在，但是可能会导致一些难以排查的问题，例如多个组件监听同一事件，不知道哪个组件触发了该事件。
+![消息订阅与发布]
+全局事件总线（GlobalEventBus）是一种基于Vue实例的事件总线的实现方式，它可以将事件处理器实例化到一个Vue实例中，并将其作为全局对象引用，从而使得各个组件之间可以共享事件处理器。在Vue中，可以创建一个新的Vue实例，将其挂载到全局对象上，然后使用$emit和$on方法触发和监听事件。这种方式可以更好地控制事件的传播，同时也可以更好地管理事件，避免了全局事件订阅的问题。
+综上所述，消息订阅与发布适用于各个组件之间需要进行 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1child%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/" title="二级路由child的命名规则">二级路由child的命名规则</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:12:26.032Z" title="发表于 2023-09-21 19:12:26">2023-09-21</time></span></div><div class="content">Q : 为什么在一个存在二级路由的router中vue提示我删除name值？
+A : 在 Vue Router 中，如果你使用了命名路由，并且这些命名路由是作为父路由配置的子路由，那么你在父路由配置中定义的 name 值会被 Vue Router 自动为子路由生成一个前缀。这个前缀的格式是 parentName-childName，其中 parentName 是父路由的 name 值，childName 是子路由的 name 值。
+例如，假设你有如下的父路由配置和子路由配置：
+12345678910111213141516const router = new VueRouter(&#123;  routes: [    &#123;      path: &#x27;/parent&#x27;,      component: Parent,      children: [        &#123;          path: &#x27;child&#x27;,          component: Child,          name: &#x27;child&#x27 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/21/%E5%85%B3%E4%BA%8E%E6%9A%B4%E9%9C%B2/" title="关于暴露">关于暴露</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-21T11:11:30.874Z" title="发表于 2023-09-21 19:11:30">2023-09-21</time></span></div><div class="content">在 JavaScript 中，模块化的概念是通过模块来封装代码和数据，以便于管理和复用。在模块中，我们可以通过“暴露”（export）和“引入”（import）来共享模块中的代码和数据。
+JavaScript 中有多种暴露方式，其中比较常用的包括以下几种：
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+默认暴露（default export）：使用 export default 关键字来暴露一个模块，一个模块只能有一个默认暴露。使用默认暴露时，引入模块时可以使用任意名称来引用默认导出的模块。
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+示例：
+12345678javascriptCopy code// module.jsconst name = &#x27;John&#x27;;export default name;// app.jsimport myName from &#x27;./module.js&#x27;;console.log(myName); // 输出 John
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+分别暴露（named exports）：使用 export 关键字来暴露一个或多个模块，每个模块都有一个唯一的名称。使用分别暴露时，引入模块时需要使用相应的名称来引用导出的模块。
+（05 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/06/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-06T07:52:26.443Z" title="发表于 2023-02-06 15:52:26">2023-02-06</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
+More info: Writing
+Run server1$ hexo server
 
+More info: Server
+Generate static files1$ hexo generate
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/IMG_5016.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ib</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yongxingqudengdai"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">ib's blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/21/vuecli/" title="关于vue-cli脚手架">关于vue-cli脚手架</a><time datetime="2023-09-21T11:12:54.018Z" title="发表于 2023-09-21 19:12:54">2023-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/21/data&amp;props/" title="data &amp; props通信">data &amp; props通信</a><time datetime="2023-09-21T11:12:48.173Z" title="发表于 2023-09-21 19:12:48">2023-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/21/render%E5%87%BD%E6%95%B0/" title="render函数学习">render函数学习</a><time datetime="2023-09-21T11:12:37.941Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/21/params%E5%8F%82%E6%95%B0%E5%9C%A8path%E4%B8%8B%E5%8D%A0%E4%BD%8D%E7%AC%A6%E7%9A%84%E9%97%AE%E5%8F%B7%E9%97%AE%E9%A2%98/" title="params参数在path下占位符的问号问题">params参数在path下占位符的问号问题</a><time datetime="2023-09-21T11:12:37.938Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/21/array.reduce()/" title="array.reduce()方法">array.reduce()方法</a><time datetime="2023-09-21T11:12:37.935Z" title="发表于 2023-09-21 19:12:37">2023-09-21</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-09-21T11:27:01.982Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/index.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ib</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["吹着口哨向前走吧 天上星星璀璨依旧"])
+  } else {
+    document.getElementById("subtitle").textContent = "吹着口哨向前走吧 天上星星璀璨依旧"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":300,"height":600},"mobile":{"show":true},"react":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
